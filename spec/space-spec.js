@@ -1,21 +1,21 @@
-import { Calc } from "./../src/Calc.js";
+import { Age } from "./../src/Age.js";
 
-describe('Calc', function() {
+describe('Age', function() {
   let todaysDate;
   let testBirthday;
-  let newCalc;
+  let newAge;
 
   beforeEach(function() {
     todaysDate = new Date();
     testBirthday = new Date(24,1994,0,1);
-    newCalc = new Calc(1)
+    newAge = new Age(1);
   });
 
   it('should return age converted to seconds', function(){
-    expect(newCalc.inSeconds()).toEqual(31536000);
-    console.log(newCalc.age);
+    expect(newAge.inSeconds()).toEqual(31536000);
+    console.log(newAge.age);
   });
-  // it('describe test', function() {
-  //   expect(reusableObject.prop).toEqual(value);
-  // });
+  it('should return age converted to Mercury years', function(){
+    expect(newAge.inMercury()).toEqual(0.24);
+  });
 });
