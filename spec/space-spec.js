@@ -26,11 +26,11 @@ describe('Age', function() {
     expect(newAge.inJupiter()).toEqual(11.86);
   });
   it('should return difference in current age and your life expectancy with \'years remaining\' message if your age is less than expectancy', function(){
-    expect(lifeExpectTest.lifeExpect(88)).toEqual("You have 64 years remaining.");
+    expect(lifeExpectTest.lifeExpect(88)).toEqual("you have 64 years remaining.");
   });
   it('should return difference in current age and your life expectancy with a \'years exceeded\' message if your age is greater than expectancy', function(){
     console.log(lifeExpectTest.lifeExpect(20));
-    expect(lifeExpectTest.lifeExpect(20)).toEqual("You've exceeded your life expectancy by 4 years.");
+    expect(lifeExpectTest.lifeExpect(20)).toEqual("you've exceeded your life expectancy by 4 years.");
   });
 });
 //specs 1-5 passed

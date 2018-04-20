@@ -25,12 +25,12 @@ A program to convert your earth age to different ages based on other planets' ye
 * Open terminal, navigate to project root folder and run npm install
 
 ## Known Bugs
-
+* None known at this time.
 ## Technologies Used
 
 * HTML
 * CSS _(Bootstrap 4.1)_
-* JavaScript _(jQuery 3.3.1)_
+* JavaScript _(jQuery 3.2.1)_
 * Node.js
   * Babel
   * ESLint
