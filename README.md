@@ -1,23 +1,22 @@
-# **[Project Name]**
+# **Space Calculator**
 
-#### By William Chu
+#### By Ami Cooper
 
 ## Description
+A program to convert your earth age to different ages based on other planets' year cycles.
 
 ## Specifications
 
 | Specification | Input | Output |
 | --- | --- | --- |
-| Description | Input | Output|
+| Take age and convert it to seconds | 1 | 31536000 |
+| Take
 
 ## Setup/Installation Requirements
 
-* To view project code, _clone repository from_ https://github.com/william-chu/Project
+* To view project code, _clone repository from_ https://github.com/amiraine/Space-Calculator.git
 * Install Node.js
 * Open terminal, navigate to project root folder and run npm install
-* To bundle and build project distribution folder, run npm run build
-* To view Jasmine tests, run npm test
-* To view project in development mode, run npm start
 
 ## Known Bugs
 
@@ -25,16 +24,16 @@
 
 * HTML
 * CSS _(Bootstrap 4.1)_
-* JavaScript _(jQuery 3.2.1)_
+* JavaScript _(jQuery 3.3.1)_
 * Node.js
-* Webpack
-* ESLint
-* Jasmine
-* Karma
-* Babel
+  * Babel
+  * ESLint
+  * Jasmine
+  * Karma
+  * Webpack
 
 ## License
 
-* GPL
+* Open source
 
-William Chu © 2018
+Ami Cooper © 2018
