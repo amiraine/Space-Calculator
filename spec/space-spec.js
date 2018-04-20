@@ -1,15 +1,21 @@
-import { Class } from "./../src/class.js";
+import { Calc } from "./../src/Calc.js";
 
-describe('Class', function() {
+describe('Calc', function() {
   let todaysDate;
   let testBirthday;
+  let newCalc;
 
   beforeEach(function() {
     todaysDate = new Date();
-    testBirthday = new Date(1994,0,1);
+    testBirthday = new Date(24,1994,0,1);
+    newCalc = new Calc(1)
   });
 
-  it('describe test', function() {
-    expect(reusableObject.prop).toEqual(value);
+  it('should return age converted to seconds', function(){
+    expect(newCalc.inSeconds()).toEqual(31536000);
+    console.log(newCalc.age);
   });
+  // it('describe test', function() {
+  //   expect(reusableObject.prop).toEqual(value);
+  // });
 });

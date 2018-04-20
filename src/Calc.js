@@ -1,5 +1,6 @@
 class Calc {
-  constructor(year, month, day, hour, minute, second) {
+  constructor(age, year, month, day, hour, minute, second) {
+    this.age = 0;
     this.year = year;
     this.month = month;
     this.day = day;
@@ -8,12 +9,11 @@ class Calc {
     this.second  = second;
   }
 
-  inSeconds(year) {
+  inSeconds() {
     let secondsValue;
-    secondsValue = this.year * 365 * 60 * 60;
+    secondsValue = this.age * 365 * 24 * 60 * 60;
     return secondsValue
   }
-  
 }
 
-export { Class };
+export { Calc };
