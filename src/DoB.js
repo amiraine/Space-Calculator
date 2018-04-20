@@ -9,13 +9,13 @@ class DoB {
     let diffMonth;
     let diffDay;
     let diffSum;
-    diffYear = nowYear - this.year
-    diffMonth = nowMonth - this.month
-    diffDay = nowDay - this.day
+    diffYear = nowYear - this.year;
+    diffMonth = nowMonth - this.month;
+    diffDay = nowDay - this.day;
     diffSum = (diffYear * 365 * 24 * 60 * 60);
     diffSum += (diffMonth * 30 * 24 * 60 *60);
     diffSum += (diffDay * 24 * 60 * 60);
-    return diffSum
+    return diffSum;
   }
 }
 export { DoB };

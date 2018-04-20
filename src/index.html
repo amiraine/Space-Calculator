@@ -2,9 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Space Age Calculator</title>
   </head>
   <body>
-
+    <div class="container-fluid">
+      <h1>What's your age again?</h1>
+      <h2>Input your age, date of birth, and demographic info!</h2>
+      <form id="form">
+        <input type="number" placeholder="Age" required>
+        <br><label for="date">Date of birth</label>
+        <br><input type="date" required>
+        <br><label for="race">Race</label>
+        <br><select class="race" required>
+          <option value="white">White</option>
+          <option value="black">African-American</option>
+          <option value="asian">Asian-American</option>
+          <option value="hispanic">Hispanic</option>
+          <option value="native">Native American</option>
+        </select>
+        <br><label for="gender">
+        <br></label><select class="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br><button class="btn btn-info">Submit</button>
+      </form>
+      <div class="numbers-out">
+        
+      </div>
+    </div>
   </body>
 </html>

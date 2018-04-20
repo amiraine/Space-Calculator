@@ -5,35 +5,35 @@ class Age {
   inSeconds() {
     let secondsValue;
     secondsValue = this.age * 365 * 24 * 60 * 60;
-    return secondsValue
+    return secondsValue;
   }
   inMercury(){
     let mercuryValue;
     mercuryValue = this.age * 0.24;
-    return mercuryValue
+    return mercuryValue;
   }
   inVenus(){
     let venusValue;
     venusValue = this.age * 0.62;
-    return venusValue
+    return venusValue;
   }
   inMars(){
     let marsValue;
     marsValue = this.age * 1.88;
-    return marsValue
+    return marsValue;
   }
   inJupiter(){
     let jupiterValue;
     jupiterValue = this.age * 11.86;
-    return jupiterValue
+    return jupiterValue;
   }
   lifeExpect(expYear){
     let lifeLeft;
     lifeLeft = expYear - this.age;
     if (lifeLeft > 0) {
-      return "You have " + lifeLeft + " years remaining."
+      return "You have " + lifeLeft + " years remaining.";
     } else if (lifeLeft < 0) {
-      return "You've exceeded your life expectancy by " + Math.abs(lifeLeft) + " years."
+      return "You've exceeded your life expectancy by " + Math.abs(lifeLeft) + " years.";
     }
   }
 }
