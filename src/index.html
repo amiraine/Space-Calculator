@@ -6,29 +6,42 @@
   </head>
   <body>
     <div class="container-fluid">
-      <h1>What's your age again?</h1>
-      <h2>Input your age, date of birth, and demographic info!</h2>
-      <form id="form">
-        <input type="number" placeholder="Age" required>
-        <br><label for="date">Date of birth</label>
-        <br><input type="date" required>
-        <br><label for="race">Race</label>
-        <br><select class="race" required>
-          <option value="white">White</option>
-          <option value="black">African-American</option>
-          <option value="asian">Asian-American</option>
-          <option value="hispanic">Hispanic</option>
-          <option value="native">Native American</option>
-        </select>
-        <br><label for="gender">
-        <br></label><select class="gender" required>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-        <br><button class="btn btn-info">Submit</button>
-      </form>
-      <div class="numbers-out">
-        
+      <div class="card cardOne">
+        <div class="card-header">
+          <h1>What's your age again?</h1>
+          <h2>Input your date of birth and demographic info!</h2>
+        </div>
+        <div class="card-body">
+          <form id="form">
+            <br><label for="date">Date of birth:</label>
+            <br><input type="number" class="dayIn" placeholder="Day" maxlength="4" min="1" max="31" required>
+            <input type="number" class="monthIn" placeholder="Month" maxlength="2"  min="1" max="12" required>
+            <input type="number" class="yearIn" placeholder="Year" maxlength="4" min="1900" max="2018" required>
+            <br><label for="race">Race</label>
+            <br><select class="race" required>
+              <option value = 79>White</option>
+              <option value = 75>African-American</option>
+              <option value= 87>Asian-American</option>
+              <option value= 83>Hispanic</option>
+              <option value= 75>Native American</option>
+            </select>
+            <br><button type="submit" class="btn btn-info">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="card cardTwo">
+        <div class="card-title">
+          <h2>Your results:</h2>
+        </div>
+        <div class="card-body" id="results">
+          <h3>Your current age on earth is <span id="earth-age"></span>.</h3>
+          <h3>Your age in seconds is <span id='age-in-sec'></span>, or more specifically based on your date of birth: <span id="age-in-dob"></span>.</h3>
+          <h3>Your age on Mercury is <span id='merc-age'></span>.</h3>
+          <h3>Your age on Venus is <span id='venu-age'></span>.</h3>
+          <h3>Your age on Mars is <span id='mars-age'></span>.</h3>
+          <h3>Your age on Jupiter is <span id='jupi-age'></span>.</h3>
+          <h3>Based on your demographic info, your life expectancy is <span id="life-span"></span>. This means <span id="life-expect-return"></span>.</h3>
+        </div>
       </div>
     </div>
   </body>

@@ -1,1 +1,15 @@
-
+body{
+  background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2014/01/04/214848/fd73c029eea04ec2289ccbdcbc66572c.jpg');
+}
+.card{
+  background-color: rgb(155,155,155,.6);
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.cardTwo{
+  display: none;
+}

@@ -31,9 +31,9 @@ class Age {
     let lifeLeft;
     lifeLeft = expYear - this.age;
     if (lifeLeft > 0) {
-      return "You have " + lifeLeft + " years remaining.";
+      return "you have " + lifeLeft + " years remaining.";
     } else if (lifeLeft < 0) {
-      return "You've exceeded your life expectancy by " + Math.abs(lifeLeft) + " years.";
+      return "you've exceeded your life expectancy by " + Math.abs(lifeLeft) + " years.";
     }
   }
 }
