@@ -27,6 +27,15 @@ class Age {
     jupiterValue = this.age * 11.86;
     return jupiterValue
   }
+  lifeExpect(expYear){
+    let lifeLeft;
+    lifeLeft = expYear - this.age;
+    if (lifeLeft > 0) {
+      return "You have " + lifeLeft + " years remaining."
+    } else if (lifeLeft < 0) {
+      return "You've exceeded your life expectancy by " + Math.abs(lifeLeft) + " years."
+    }
+  }
 }
 
 export { Age };
