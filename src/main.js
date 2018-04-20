@@ -15,6 +15,15 @@ let monthInput;
 let dayInput;
 let raceInput;
 let ageIn;
+let newUser;
+let newDateOf;
+let secoAge;
+let secSpec;
+let mercAge;
+let venuAge;
+let marsAge;
+let jupiAge;
+let lifeExpDiff;
 $(document).ready(function() {
   $("#form").submit(function(event){
     event.preventDefault();
@@ -24,16 +33,16 @@ $(document).ready(function() {
     dayInput = $(".dayIn").val();
     raceInput = $(".race").val();
     ageIn = 2018 - yearInput;
-    const newUser = new Age(ageIn);
-    const newDateOf = new DoB(yearInput,monthInput,dayInput);
+    newUser = new Age(ageIn);
+    newDateOf = new DoB(yearInput,monthInput,dayInput);
     //calculate values
-    const secoAge = newUser.inSeconds();
-    const secSpec = newDateOf.differenceSec(yearNow,monthNow,dayNow);
-    const mercAge = newUser.inMercury();
-    const venuAge = newUser.inVenus();
-    const marsAge = newUser.inMars();
-    const jupiAge = newUser.inJupiter();
-    const lifeExpDiff = newUser.lifeExpect(raceInput);
+    secoAge = newUser.inSeconds();
+    secSpec = newDateOf.differenceSec(yearNow,monthNow,dayNow);
+    mercAge = newUser.inMercury();
+    venuAge = newUser.inVenus();
+    marsAge = newUser.inMars();
+    jupiAge = newUser.inJupiter();
+    lifeExpDiff = newUser.lifeExpect(raceInput);
     //add text to html Output
     $('#earth-age').text(ageIn);
     $('#age-in-sec').text(secoAge);
@@ -45,7 +54,8 @@ $(document).ready(function() {
     $('#life-span').text(raceInput);
     $('#life-expect-return').text(lifeExpDiff);
     //
-    $(".cardTwo").slideDown();
+    $(".cardMiddle").slideDown();
     $(".cardOne").slideUp();
   });
+  
 });
